@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.authors      = { "Approov, Ltd." => "support@approov.io" }
   s.source       = { :git => "https://github.com/approov/swift-http-structured-headers.git", :tag => s.version }
   s.swift_version = "5.10"
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "12.0"
+  s.watchos.deployment_target = "9.0"
   s.source_files  = "Sources/StructuredFieldValues/**/*.swift", "Sources/RawStructuredFieldValues/**/*.swift"
   s.exclude_files = "Sources/*/Docs.docc"
 end
