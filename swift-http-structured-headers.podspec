@@ -12,6 +12,15 @@ Pod::Spec.new do |s|
   s.swift_version = "5.10"
   s.ios.deployment_target = "12.0"
   s.watchos.deployment_target = "9.0"
-  s.source_files  = "Sources/StructuredFieldValues/**/*.swift", "Sources/RawStructuredFieldValues/**/*.swift"
-  s.exclude_files = "Sources/*/Docs.docc"
+
+  s.subspec 'RawStructuredFieldValues' do |raw|
+    raw.source_files = "Sources/RawStructuredFieldValues/**/*.swift"
+    raw.exclude_files = "Sources/RawStructuredFieldValues/Docs.docc"
+  end
+
+  s.subspec 'StructuredFieldValues' do |sfv|
+    sfv.source_files = "Sources/StructuredFieldValues/**/*.swift"
+    sfv.exclude_files = "Sources/StructuredFieldValues/Docs.docc"
+    sfv.dependency 'swift-http-structured-headers/RawStructuredFieldValues'
+  end
 end
