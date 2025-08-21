@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "9.0"
 
   s.subspec 'RawStructuredFieldValues' do |raw|
-  raw.source_files = "Sources/RawStructuredFieldValues/**/*.swift"
-  raw.exclude_files = "Sources/RawStructuredFieldValues/Docs.docc"
-  raw.module_name = 'RawStructuredFieldValues'
-  raw.header_mappings_dir = 'Sources/RawStructuredFieldValues'
-end
+    raw.source_files = "Sources/RawStructuredFieldValues/**/*.swift"
+    raw.exclude_files = "Sources/RawStructuredFieldValues/Docs.docc"
+    raw.module_name = 'RawStructuredFieldValues'
+    raw.header_mappings_dir = 'Sources/RawStructuredFieldValues'
+  end
 
   s.subspec 'StructuredFieldValues' do |sfv|
     sfv.source_files = "Sources/StructuredFieldValues/**/*.swift"
