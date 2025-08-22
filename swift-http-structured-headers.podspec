@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "swift-http-structured-headers"
   s.version      = "0.1.0"
-  s.summary      = "Apple SFV"
+  s.summary      = "Structured Field Values Swift Library"
   s.description  = <<-DESC
-    SFV library support
+    SFV library support fork from https://github.com/apple/swift-http-structured-headers
   DESC
   s.homepage     = "https://approov.io"
   s.license      = { :type => "Apache 2.0", :file => "LICENSE.txt" }
