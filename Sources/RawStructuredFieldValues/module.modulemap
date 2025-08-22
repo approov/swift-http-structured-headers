@@ -1,4 +1,0 @@
-module RawStructuredFieldValues {
-    header "RawStructuredFieldValues.h"
-    export *
-}

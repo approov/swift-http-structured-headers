@@ -1,4 +1,0 @@
-module StructuredFieldValues {
-    header "StructuredFieldValues.h"
-    export *
-}
