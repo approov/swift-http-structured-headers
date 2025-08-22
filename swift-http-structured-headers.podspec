@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "swift-http-structured-headers"
-  s.version      = "0.1.0"
+  s.version      = "1.4.0"
   s.summary      = "Structured Field Values Swift Library"
   s.description  = <<-DESC
     SFV library support fork from https://github.com/apple/swift-http-structured-headers
